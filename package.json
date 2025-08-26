@@ -1,0 +1,27 @@
+{
+  "name": "fictional-engine",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:frontend": "yarn --cwd frontend dev",
+    "dev:backend": "yarn --cwd backend dev",
+    "dev": "concurrently \"yarn dev:backend\" \"yarn dev:frontend\"",
+    "build:frontend": "yarn --cwd frontend build",
+    "build:backend": "yarn --cwd backend build",
+    "build": "yarn build:backend && yarn build:frontend",
+    "start:backend": "yarn --cwd backend start",
+    "start:frontend": "yarn --cwd frontend preview",
+    "start": "concurrently \"yarn start:backend\" \"yarn start:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "eslint": "^9.33.0",
+    "lerna": "^8.2.3",
+    "typescript": "~5.8.3"
+  },
+  "packageManager": "yarn@4.9.4"
+}
