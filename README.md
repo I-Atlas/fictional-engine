@@ -1,7 +1,6 @@
 ## Тестовое задание
 
-- `frontend/` — фронтенд: React + TypeScript + Vite (MobX, Socket.IO client, Tailwind + DaisyUI)
-- `backend/` — бэкенд: Express + Socket.IO (TypeScript)
+[Описание](./TASK.md)
 
 ## Требования
 
@@ -11,6 +10,11 @@
 ```bash
 corepack enable
 ```
+
+## Структура
+
+- `frontend/` — фронтенд: React + TypeScript + Vite (MobX, Socket.IO client, Tailwind + DaisyUI)
+- `backend/` — бэкенд: Express + Socket.IO (TypeScript)
 
 ## Команды
 
